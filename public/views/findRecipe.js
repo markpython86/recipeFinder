@@ -17,6 +17,7 @@ $(document).ready(function () {
 			console.log('e', e)
 		}
 	});
+	
 
 	var showUser = function (data) {
 		console.log(data)
