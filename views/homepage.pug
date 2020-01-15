@@ -1,0 +1,287 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width,initial-scale=1,shrink-to-fit=no')
+		meta(http-equiv='x-ua-compatible' content='ie=edge')
+		title Material Design Bootstrap
+		// Font Awesome
+		link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.11.2/css/all.css')
+		// Bootstrap core CSS
+		link(href='/css/bootstrap.min.css' rel='stylesheet')
+		// Material Design Bootstrap
+		link(href='css/mdb.min.css' rel='stylesheet')
+		// Your custom styles (optional)
+		link(href='css/style.min.css' rel='stylesheet')
+		link(href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet")
+		style(rel='stylesheet').
+			.select2-container{
+				margin-bottom: 1.5rem!important;
+			}
+
+body
+
+
+	block content
+		// Main Navigation
+		header
+			//  Navbar 
+			nav.navbar.fixed-top.navbar-expand-lg.navbar-light.white.scrolling-navbar
+				.container
+					//  Brand 
+					a.navbar-brand.waves-effect(href='https://mdbootstrap.com/docs/jquery/' target='_blank')
+						strong.blue-text MDB
+					//  Collapse 
+					button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+						span.navbar-toggler-icon
+					//  Links 
+					.collapse.navbar-collapse#navbarSupportedContent
+						//  Left 
+						ul.navbar-nav.mr-auto
+							li.nav-item.active
+								a.nav-link.waves-effect(href='#') Home
+									span.sr-only (current)
+							li.nav-item
+								a.nav-link.waves-effect(href='https://mdbootstrap.com/docs/jquery/' target='_blank') About MDB
+							li.nav-item
+								a.nav-link.waves-effect(href='https://mdbootstrap.com/docs/jquery/getting-started/download/' target='_blank') Free download
+							li.nav-item
+								a.nav-link.waves-effect(href='https://mdbootstrap.com/education/bootstrap/' target='_blank') Free tutorials
+						//  Right 
+						ul.navbar-nav.nav-flex-icons
+							li.nav-item
+								a.nav-link.waves-effect(href='https://www.facebook.com/mdbootstrap' target='_blank')
+									i.fab.fa-facebook-f
+							li.nav-item
+								a.nav-link.waves-effect(href='https://twitter.com/MDBootstrap' target='_blank')
+									i.fab.fa-twitter
+							li.nav-item
+								a.nav-link.border.border-light.rounded.waves-effect(href='https://github.com/mdbootstrap/bootstrap-material-design' target='_blank')
+									i.fab.fa-github.mr-2
+										| MDB GitHub
+
+			//  Navbar 
+			// Main Navigation
+			// Main layout
+		main.mt-5.pt-5
+			.container
+				// Section: Jumbotron
+				section.card.blue-gradient.wow.fadeIn#intro
+					//  Content 
+					.card-body.text-white.text-center.py-5.px-5.my-5
+						h1.mb-4
+							strong Learn Bootstrap 4 with MDB
+						p
+							strong Best & free guide of responsive web design
+						p.mb-4
+							strong The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions available. Create your own, stunning website.
+						a.btn.btn-outline-white.btn-lg(target='_blank' href='https://mdbootstrap.com/education/bootstrap/') Start free tutorial
+							i.fas.fa-graduation-cap.ml-2
+
+				section.pt-5
+					form(id="account-form"  class="text-center border border-light p-5" role="form" action="/receipesearch") 
+
+						p(class="h4 mb-4") Search For a receipe with your Favorite ingredients
+
+						  
+						label Ingredients
+						select(class="js-example-tags form-control mb-4" multiple="" data-select2-id="4" tabindex="-1" name="ing" aria-hidden="true")
+							option(selected="selected") orange
+							option white
+							option(selected="selected") purple
+							
+						  
+						div(class="form-group")
+							textarea(class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message")
+						
+
+						  
+						div(class="custom-control custom-checkbox mb-4")
+							input(type="checkbox" class="custom-control-input" id="defaultContactFormCopy")
+							label(class="custom-control-label" for="defaultContactFormCopy") Send me a copy of this message
+						
+
+						  
+						button(class="btn btn-info btn-block" type="submit") Send
+
+					
+					  
+				section.pt-5
+					//  Heading & Description 
+					
+					.wow.fadeIn
+						// Section heading
+						h2.h1.text-center.mb-5 What is MDB?
+						// Section description
+						p.text-center MDB is world's most popular Material Design framework for building responsive, mobile-first websites and apps.
+						p.text-center.mb-5.pb-5
+							| Trusted by over 
+							strong 400 000
+							|  developers and designers. Easy to use & customize. 400+ material UI elements, templates & tutorials.
+					//  Heading & Description 
+					// Grid row
+					div#cards
+					//- .row.wow.fadeIn
+					//- 	// Grid column
+					//- 	.col-lg-5.col-xl-4.mb-4
+					//- 		// Featured image
+					//- 		.view.overlay.rounded.z-depth-1
+					//- 			img.img-fluid(src='https://spoonacular.com/recipeImages/ham-cheese-sliders-610396.jpg' alt)
+					//- 			a(href='https://mdbootstrap.com/education/tech-marketing/web-push-introduction/' target='_blank')
+					//- 			.mask.rgba-white-slight
+					//- 	// Grid column
+					//- 	// Grid column
+					//- 	.col-lg-7.col-xl-7.ml-xl-4.mb-4
+					//- 		h3.mb-3.font-weight-bold.dark-grey-text
+					//- 			strong Web Push notifications
+					//- 		p.grey-text Push messaging provides a simple and effective way to re-engage with your users and in this tutorial you'll learn how to add push notifications to your web app
+					//- 		a.btn.btn-primary.btn-md(href='https://mdbootstrap.com/education/tech-marketing/web-push-introduction/' target='_blank')
+					//- 			| Start tutorial
+
+					//- 			i.fas.fa-play.ml-2
+					//- 	// Grid column
+					//- 	// Grid row
+					//- 	hr.mb-5
+
+						//- .row.wow.fadeIn
+						//- 	// Grid column
+						//- 	.col-lg-5.col-xl-4.mb-4
+						//- 		// Featured image
+						//- 		.view.overlay.rounded.z-depth-1-half
+						//- 			.view.overlay
+						//- 				.embed-responsive.embed-responsive-16by9
+						//- 					iframe.embed-responsive-item(src='https://www.youtube.com/embed/cXTThxoywNQ' allowfullscreen)
+						//- 	// Grid column
+						//- 	// Grid column
+						//- 	.col-lg-7.col-xl-7.ml-xl-4.mb-4
+						//- 		h3.mb-3.font-weight-bold.dark-grey-text
+						//- 			strong MDB Quick Start
+						//- 		p.grey-text Get started with MDBootstrap, the world's most popular Material Design framework for building responsive, mobile-first sites.
+						//- 		p
+						//- 			strong 5 minutes, a few clicks and... done. You will be surprised at how easy it is.
+						//- 		a.btn.btn-primary.btn-md(href='https://www.youtube.com/watch?v=cXTThxoywNQ' target='_blank')
+						//- 			| Start tutorial
+
+						//- 			i.fas.fa-play.ml-2
+						//- 	// Grid column
+						//- // Grid row
+						//- hr.mb-5
+						//- // Grid row
+						//- .row.mt-3.wow.fadeIn
+						//- 	// Grid column
+						//- 	.col-lg-5.col-xl-4.mb-4
+						//- 		// Featured image
+						//- 		.view.overlay.rounded.z-depth-1
+						//- 			img.img-fluid(src='https://mdbootstrap.com/wp-content/uploads/2017/11/brandflow-tutorial-fb.jpg' alt)
+						//- 			a(href='https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/' target='_blank')
+						//- 			.mask.rgba-white-slight
+						//- 	// Grid column
+						//- 	// Grid column
+						//- 	.col-lg-7.col-xl-7.ml-xl-4.mb-4
+						//- 		h3.mb-3.font-weight-bold.dark-grey-text
+						//- 			strong Bootstrap Automation
+						//- 		p.grey-text Learn how to create a smart website which learns your user and reacts properly to his behavior.
+						//- 		a.btn.btn-primary.btn-md(href='https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/' target='_blank')
+						//- 			| Start tutorial
+
+						//- 			i.fas.fa-play.ml-2
+						//- 	// Grid column
+						//- // Grid row
+						//- hr.mb-5
+						//- // Grid row
+						//- .row.wow.fadeIn
+						//- 	// Grid column
+						//- 	.col-lg-5.col-xl-4.mb-4
+						//- 		// Featured image
+						//- 		.view.overlay.rounded.z-depth-1
+						//- 			img.img-fluid(src='https://spoonacular.com/recipeImages/ham-cheese-sliders-610396.jpg' alt)
+						//- 			a(href='https://mdbootstrap.com/education/tech-marketing/web-push-introduction/' target='_blank')
+						//- 			.mask.rgba-white-slight
+						//- 	// Grid column
+						//- 	// Grid column
+						//- 	.col-lg-7.col-xl-7.ml-xl-4.mb-4
+						//- 		h3.mb-3.font-weight-bold.dark-grey-text
+						//- 			strong Web Push notifications
+						//- 		p.grey-text Push messaging provides a simple and effective way to re-engage with your users and in this tutorial you'll learn how to add push notifications to your web app
+						//- 		a.btn.btn-primary.btn-md(href='https://mdbootstrap.com/education/tech-marketing/web-push-introduction/' target='_blank')
+						//- 			| Start tutorial
+
+						//- 			i.fas.fa-play.ml-2
+						// Grid column
+						// Grid row
+						hr.mb-5
+						// Pagination
+						nav.d-flex.justify-content-center.wow.fadeIn
+							ul.pagination.pg-blue
+								// Arrow left
+								li.page-item.disabled
+									a.page-link(href='#' aria-label='Previous')
+										span(aria-hidden='true') «
+										span.sr-only Previous
+								li.page-item.active
+									a.page-link(href='#') 1
+										span.sr-only (current)
+								li.page-item
+									a.page-link(href='#') 2
+								li.page-item
+									a.page-link(href='#') 3
+								li.page-item
+									a.page-link(href='#') 4
+								li.page-item
+									a.page-link(href='#') 5
+								li.page-item
+									a.page-link(href='#' aria-label='Next')
+										span(aria-hidden='true') »
+										span.sr-only Next
+
+		footer.page-footer.text-center.font-small.mdb-color.darken-2.mt-4.wow.fadeIn
+			// Call to action
+			.pt-4
+				a.btn.btn-outline-white(href='https://mdbootstrap.com/docs/jquery/getting-started/download/' target='_blank' role='button') Download MDB
+					i.fas.fa-download.ml-2
+				a.btn.btn-outline-white(href='https://mdbootstrap.com/education/bootstrap/' target='_blank' role='button') Start free tutorial
+
+					i.fas.fa-graduation-cap.ml-2
+			// /.Call to action
+			hr.my-4
+			//  Social icons 
+			.pb-4
+				a(href='https://www.facebook.com/mdbootstrap' target='_blank')
+				i.fab.fa-facebook-f.mr-3
+				a(href='https://twitter.com/MDBootstrap' target='_blank')
+				i.fab.fa-twitter.mr-3
+				a(href='https://www.youtube.com/watch?v=7MUISDJ5ZZ4' target='_blank')
+				i.fab.fa-youtube.mr-3
+				a(href='https://plus.google.com/u/0/b/107863090883699620484' target='_blank')
+				i.fab.fa-google-plus-g.mr-3
+				a(href='https://dribbble.com/mdbootstrap' target='_blank')
+				i.fab.fa-dribbble.mr-3
+				a(href='https://pinterest.com/mdbootstrap' target='_blank')
+				i.fab.fa-pinterest.mr-3
+				a(href='https://github.com/mdbootstrap/bootstrap-material-design' target='_blank')
+				i.fab.fa-github.mr-3
+				a(href='http://codepen.io/mdbootstrap/' target='_blank')
+				i.fab.fa-codepen.mr-3
+			//  Social icons 
+			// Copyright
+			.footer-copyright.py-3
+				|© 2018 Copyright:
+
+				a(href='https://mdbootstrap.com/education/bootstrap/' target='_blank') MDBootstrap.com 
+
+
+	block scripts
+		script(type='text/javascript' src='js/jquery-3.4.1.min.js')
+		//  Bootstrap tooltips 
+		script(type='text/javascript' src='js/popper.min.js')
+		script(src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js")
+		//  Bootstrap core JavaScript 
+		script(type='text/javascript' src='js/bootstrap.min.js')
+		//  MDB core JavaScript 
+		script(type='text/javascript' src='js/mdb.min.js')
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous")
+
+		script(src='/views/findRecipe.js')
+		//  Initializations 
+		script(type='text/javascript').
+			new WOW().init();
