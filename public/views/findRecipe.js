@@ -16,8 +16,9 @@ $(document).ready(function () {
 		error: function (e) {
 			console.log('e', e)
 		}
+		
 	});
-	
+
 
 	var showUser = function (data) {
 		console.log(data)
@@ -56,3 +57,13 @@ $(document).ready(function () {
 	}
 
 });
+
+
+'<div class="inline-countdown-promo__price text-center"><div class="inline-countdown-promo__discount-sale d-inline-block text-white d-flex flex-column text-left pb-2"><span class="price-section">
+Regular&nbsp;
+<span class="price old-price">$115</span></span> <span class="price-section">
+with Promotion&nbsp;
+<span class="price promo-price">$85</span></span></div></div>
+
+
+'<div class="inline-countdown-promo__price text-center"><div class="inline-countdown-promo__discount-sale d-inline-block text-white d-flex flex-column text-left pb-2" style=" margin-bottom: -16px; "><span class="price-section" style=" margin-bottom: -18px; "> Regular&nbsp; <span class="price old-price" style=" text-decoration: line-through; ">$29</span></span> <span class="price-section"> with Promotion&nbsp; <span class="price promo-price">$19</span></span></div></div><div class="countdown-container countdown-container--left-arrow flex-grow-1 bg-light"><div><div class="countdown-header d-flex justify-content-lg-between justify-content-around"><div class="countdown-header__percentage" style=" color: #ff3072!important; ">25% OFF!</div> <div class="countdown-header__text">PROMO ENDS:</div></div></div> <div class="countdown-container__inner d-flex align-items-center justify-content-between"><!---->  <div class="countdown-base flex-grow-1"><div class="countdown-base__inner align-items-center d-flex text-center justify-content-between"><div class="countdown-base__col"><div class="countdown-base__number">12</div> <div class="countdown-base__label">Hours</div></div> <div class="countdown-base__col"><div class="countdown-base__number">02</div> <div class="countdown-base__label">Minutes</div></div> <div class="countdown-base__col"><div class="countdown-base__number">31</div> <div class="countdown-base__label">Seconds</div></div></div> </div> </div> </div>'
