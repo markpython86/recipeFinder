@@ -1,33 +1,32 @@
-$(document).ready(function () {
-
+$(document).ready(() => {
 	$(".js-example-tags").select2({
 		tags: true,
-		tokenSeparators: [',', ' ']
-	})
-	$('#account-form').ajaxForm({
-		beforeSubmit: function (formData, jqForm, options) {
-			console.log('asd',formData)
-			return true
+		tokenSeparators: [",", " "],
+	});
+	$("#account-form").ajaxForm({
+		beforeSubmit: (formData, jqForm, options) => {
+			console.log("asd", formData);
+			return true;
 		},
-		success: function (responseText, status, xhr, $form) {
+		success: (responseText, status, xhr, $form) => {
 			// console.log(responseText)
-			if (status == 'success') showUser(responseText);
+			if (status == "success") showUser(responseText);
 		},
-		error: function (e) {
-			console.log('e', e)
-		}
+		error: (e) => {
+			console.log("e", e);
+		},
 	});
 
-	var showUser = function (data) {
-		console.log(data)
-		$('#cards').empty()
+	var showUser = (data) => {
+		console.log(data);
+		$("#cards").empty();
 		for (let index = 0; index < data.results.length; index++) {
-		var title = data.results[index].title;
-		var imageURL = data.baseUri+data.results[index].image;
-		var servings = data.results[index].servings;
-		var readyInMinutes = data.results[index].readyInMinutes;
-		
-		$('#cards').append(`<div class="row wow fadeIn">
+			var title = data.results[index].title;
+			var imageURL = data.baseUri + data.results[index].image;
+			var servings = data.results[index].servings;
+			var readyInMinutes = data.results[index].readyInMinutes;
+
+			$("#cards").append(`<div class="row wow fadeIn">
 		<!-- Grid column-->
 		<div class="col-lg-5 col-xl-4 mb-4">
 		  <!-- Featured image-->
@@ -48,10 +47,7 @@ $(document).ready(function () {
 		</div>-->
 		<!-- Grid column-->
 		<!-- Grid row-->
-		<hr class="mb-5">`)
-			
+		<hr class="mb-5">`);
 		}
-		
-	}
-
+	};
 });
