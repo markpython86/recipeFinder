@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"ajax": "0.0.4",
-		"axios": "^1.13.2",
+		"axios": "^1.13.5",
 		"cheerio": "^1.1.2",
 		"cookie-parser": "~1.4.7",
 		"debug": "~4.4.3",
