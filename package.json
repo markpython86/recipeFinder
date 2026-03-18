@@ -2,6 +2,11 @@
 	"name": "myapp",
 	"version": "0.0.0",
 	"private": true,
+	"pnpm": {
+		"overrides": {
+			"underscore": "1.13.8"
+		}
+	},
 	"scripts": {
 		"start": "NODE_ENV=production node ./bin/www",
 		"dev": "NODE_ENV=development DEBUG=myapp:* node --watch ./bin/www",
@@ -17,14 +22,14 @@
 	},
 	"dependencies": {
 		"ajax": "0.0.4",
-		"axios": "^1.13.5",
-		"cheerio": "^1.1.2",
+		"axios": "^1.13.6",
+		"cheerio": "^1.2.0",
 		"cookie-parser": "~1.4.7",
 		"debug": "~4.4.3",
-		"dotenv": "^17.2.3",
+		"dotenv": "^17.3.1",
 		"express": "~5.2.1",
 		"http-errors": "~2.0.1",
 		"morgan": "~1.10.1",
-		"pug": "^3.0.3"
+		"pug": "^3.0.4"
 	}
 }
